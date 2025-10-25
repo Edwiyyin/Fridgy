@@ -1,0 +1,25 @@
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.stat-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+}
+
+.stat-card h3 {
+    font-size: 2rem;
+    color: #2ecc71;
+}
+
+.food-item {
+    padding: 0.5rem;
+    border-left: 4px solid #f39c12;
+    margin: 0.5rem 0;
+    background: #fff9e6;
+}

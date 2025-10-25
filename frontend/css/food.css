@@ -1,0 +1,27 @@
+.hidden {
+    display: none;
+}
+
+.food-card {
+    border-left: 4px solid #2ecc71;
+    margin: 0.5rem 0;
+}
+
+.food-card.expiring {
+    border-left-color: #f39c12;
+}
+
+.food-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Fridgy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            <li><a href="food.html" class="nav-link">Food Storage</a></li>
+            <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+            <li><a href="tracker.html" class="nav-link">Meal Tracker</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Dashboard</h1>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <h3 id="total-foods">0</h3>
+                <p>Food Items</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="expiring-soon">0</h3>
+                <p>Expiring Soon</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Expiring Soon</h2>
+            <div id="expiring-list"></div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

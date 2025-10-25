@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meal Tracker - Fridgy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tracker.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="dashboard.html" class="nav-link">Dashboard</a></li>
+            <li><a href="food.html" class="nav-link">Food Storage</a></li>
+            <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+            <li><a href="tracker.html" class="nav-link">Meal Tracker</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Meal Tracker</h1>
+        
+        <button class="btn" onclick="trackerPage.showAddForm()">Log Meal</button>
+
+        <div id="add-form" class="card hidden">
+            <h3>Log New Meal</h3>
+            <form id="meal-form">
+                <div class="form-group">
+                    <label>Meal Type:</label>
+                    <select id="meal-type" required>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="snack">Snack</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Foods Eaten (comma separated):</label>
+                    <input type="text" id="meal-foods" placeholder="Milk, Bread, Eggs" required>
+                </div>
+                <button type="submit" class="btn">Log Meal</button>
+            </form>
+        </div>
+
+        <div id="meals-list"></div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/tracker.js"></script>
+</body>
+</html>
